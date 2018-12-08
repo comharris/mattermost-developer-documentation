@@ -4,28 +4,23 @@ date: 2018-11-07T15:24:42+01:00
 weight: 10
 ---
 
-This page have the intent to help the developers access and perform any type of maintenance in the Production Mattermost Kubernetes Cluster which is running on AWS using the EKS.
+This page helps developers access and perform any type of maintenance in the Production Mattermost Kubernetes Cluster, which is running on AWS using EKS.
 
+## Set up a local environment to access Kubernetes (K8s)
 
-## Setup local environment to access K8s
+1. Make sure you have `kubectl` version 1.10 or later installed. If not, follow [these instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/).
 
-First if you don't have `kubectl` installed you will need to install, also if your `kubectl` is older then version 1.10 you need to update.
+2. Use your OneLogin account to retrieve AWS Keys for the main Mattermost AWS account following [these instructions](../../onelogin-aws)
 
-Also you will need the AWS Keys for the Main Mattermost AWS account. You can get one using Onelogin, please follow this [instructions](../../onelogin-aws)
-
-When using the Onelogin-aws and you want to get the Kubernetes configuration please select the main Mattermost AWS account.
-
-### To install kubectl
-
-Follow the instructions in this [page](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+NOTE: When using Onelogin-aws account for Kubernetes configuration, please select the main Mattermost AWS account.
 
 ### Configure kubectl for Amazon EKS
 
-Follow the instructions in this [page](https://docs.aws.amazon.com/eks/latest/userguide/configure-kubectl.html)
+Follow [these instructions](https://docs.aws.amazon.com/eks/latest/userguide/configure-kubectl.html)
 
 ### Create a kubeconfig for Amazon EKS
 
-Follow the instructions in this [page](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html)
+Follow [these instructions](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html)
 
 NOTE: Please talk with Carlos to get the cluster name.
 
